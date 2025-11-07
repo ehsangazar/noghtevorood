@@ -26,7 +26,7 @@ export const metadata = {
 };
 
 export default function EpisodesPage() {
-  const episodes = episodesData as Episode[];
+  const episodes = (episodesData as Episode[]).sort((a, b) => b.id - a.id);
 
   return (
     <div className="min-h-screen bg-black">
