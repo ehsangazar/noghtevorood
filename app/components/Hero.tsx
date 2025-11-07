@@ -85,9 +85,24 @@ const Hero = () => {
               </svg>
             </a>
           </div>
-          </div>
 
-          {/* Right Side - Co-Podcasters */}
+          {/* Secondary CTA for Telegram */}
+          <div className="mt-6 text-center lg:text-left">
+            <a
+              href="https://t.me/noghtevoroodpodcast"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A] rounded"
+            >
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M9.035 15.448l-.375 5.297c.536 0 .769-.229 1.046-.504l2.512-2.42 5.205 3.81c.954.526 1.63.25 1.891-.884l3.428-16.05.001-.002c.304-1.417-.512-1.97-1.443-1.622L1.12 9.37C-.264 9.904-.243 10.675.883 11l5.385 1.585L19.26 5.26c.598-.366 1.143-.163.695.203"/>
+              </svg>
+              <span>Join our Farsi-speaking community on <span className="underline group-hover:text-[#00C27A]">Telegram</span></span>
+            </a>
+          </div>
+        </div>
+
+        {/* Right Side - Co-Podcasters */}
           <div className="flex-1 flex justify-center lg:justify-end">
             <div className="w-full max-w-md lg:max-w-lg">
               {/* Co-Podcasters Grid */}
