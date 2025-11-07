@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Image from 'next/image';
 import Link from 'next/link';
+import episodesData from '@/episodes.json';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -85,7 +86,7 @@ const SpeakersPage = () => {
     <div className="min-h-screen bg-black">
       <Header />
       
-      <main className="py-20">
+      <main id="main-content" className="py-20">
         <div className="container mx-auto px-6">
           {/* Hero Section */}
           <div className="text-center mb-16">
@@ -100,7 +101,9 @@ const SpeakersPage = () => {
 
           {/* Speakers Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {speakers.map((speaker) => (
+            {speakers.map((speaker) => {
+              const episodeSlug = (episodesData as any[]).find((e) => e.id === speaker.episode)?.slug ?? String(speaker.episode);
+              return (
               <div
                 key={speaker.episode}
                 className="bg-white/5 rounded-xl overflow-hidden hover:bg-white/10 transition-all hover:scale-105"
@@ -133,7 +136,7 @@ const SpeakersPage = () => {
                       href={speaker.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors text-center"
+                      className="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A]"
                     >
                       LinkedIn
                     </a>
@@ -142,7 +145,7 @@ const SpeakersPage = () => {
                         href={speaker.website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1 bg-[#00704A] hover:bg-[#009962] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors text-center"
+                        className="flex-1 bg-[#00704A] hover:bg-[#009962] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A]"
                       >
                         Website
                       </a>
@@ -152,15 +155,15 @@ const SpeakersPage = () => {
                   {/* View Episode Link */}
                   <div className="mt-4">
                     <Link
-                      href={`/episodes/${speaker.episode}`}
-                      className="block text-center text-white/70 hover:text-[#00704A] text-sm transition-colors"
+                      href={`/episodes/${episodeSlug}`}
+                      className="block text-center text-white/70 hover:text-[#00704A] text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A] rounded"
                     >
                       Watch Episode →
                     </Link>
                   </div>
                 </div>
               </div>
-            ))}
+            );})}
           </div>
 
           {/* Call to Action */}

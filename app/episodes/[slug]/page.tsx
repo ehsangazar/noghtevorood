@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import episodesData from '@/episodes.json';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import ShareButtons from '../../components/ShareButtons';
 import Link from 'next/link';
 
 interface Episode {
@@ -67,14 +68,15 @@ export default async function EpisodePage({ params }: PageProps) {
     <div className="min-h-screen bg-black">
       <Header />
       
-      <main className="py-20">
+      <main id="main-content" className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             {/* Breadcrumb */}
-            <nav className="mb-8">
+            <nav className="mb-8" aria-label="Breadcrumb">
               <Link 
                 href="/episodes" 
-                className="inline-flex items-center gap-2 text-white/70 hover:text-[#00704A] transition-colors"
+                className="inline-flex items-center gap-2 text-white/70 hover:text-[#00704A] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A] rounded"
+                aria-label="Back to Episodes"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -148,13 +150,22 @@ export default async function EpisodePage({ params }: PageProps) {
               </div>
             )}
 
+            {/* Share */}
+            <div className="mt-6 flex justify-center">
+              <ShareButtons
+                title={episode.title.en}
+                url={`https://noghtevorood.com/episodes/${episode.slug}`}
+              />
+            </div>
+
             {/* Navigation to next/previous episodes */}
             <div className="mt-12 pt-8 border-t border-white/10">
               <div className="flex justify-between items-center">
                 {episode.id > 1 && (
                   <Link
                     href={`/episodes/${episodesData.find((ep) => ep.id === episode.id - 1)?.slug}`}
-                    className="flex items-center gap-2 text-white/70 hover:text-[#00704A] font-medium transition-colors"
+                    className="flex items-center gap-2 text-white/70 hover:text-[#00704A] font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A] rounded"
+                    aria-label="Previous episode"
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -165,7 +176,8 @@ export default async function EpisodePage({ params }: PageProps) {
                 {episode.id < episodesData.length && (
                   <Link
                     href={`/episodes/${episodesData.find((ep) => ep.id === episode.id + 1)?.slug}`}
-                    className="flex items-center gap-2 text-white/70 hover:text-[#00704A] font-medium ml-auto transition-colors"
+                    className="flex items-center gap-2 text-white/70 hover:text-[#00704A] font-medium ml-auto transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A] rounded"
+                    aria-label="Next episode"
                   >
                     <span>Next Episode</span>
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
