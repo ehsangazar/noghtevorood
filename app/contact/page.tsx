@@ -76,7 +76,7 @@ const ContactPage = () => {
                 Stay Connected
               </h3>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* YouTube */}
                 <a
                   href="https://www.youtube.com/@noghte_vorood"
@@ -110,6 +110,24 @@ const ContactPage = () => {
                   <div>
                     <h4 className="text-white font-semibold">Newsletter</h4>
                     <p className="text-white/70 text-sm">Get updates via email</p>
+                  </div>
+                </a>
+
+                {/* Telegram */}
+                <a
+                  href="https://t.me/noghtevoroodpodcast"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 bg-white/10 hover:bg-white/20 p-4 rounded-lg transition-all"
+                >
+                  <div className="w-12 h-12 bg-[#229ED9] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M9.035 15.448l-.375 5.297c.536 0 .769-.229 1.046-.504l2.512-2.42 5.205 3.81c.954.526 1.63.25 1.891-.884l3.428-16.05.001-.002c.304-1.417-.512-1.97-1.443-1.622L1.12 9.37C-.264 9.904-.243 10.675.883 11l5.385 1.585L19.26 5.26c.598-.366 1.143-.163.695.203"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold">Telegram Community</h4>
+                    <p className="text-white/70 text-sm">Join Farsi-speaking peers</p>
                   </div>
                 </a>
               </div>

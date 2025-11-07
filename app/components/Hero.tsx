@@ -101,7 +101,7 @@ const Hero = () => {
                         alt="Ehsan Gazar"
                         width={80}
                         height={80}
-                        className="rounded-full object-cover ring-2 ring-[#00704A]/50 group-hover:ring-[#00704A] transition-all"
+                        className="rounded-full object-cover ring-2 ring-[#00704A]/50 group-hover:ring-[#00704A] transition-all grayscale"
                       />
                     </div>
                     <div className="flex-1">
@@ -144,7 +144,7 @@ const Hero = () => {
                         alt="Ali Parvizi"
                         width={80}
                         height={80}
-                        className="rounded-full object-cover ring-2 ring-[#00704A]/50 group-hover:ring-[#00704A] transition-all"
+                        className="rounded-full object-cover ring-2 ring-[#00704A]/50 group-hover:ring-[#00704A] transition-all grayscale"
                       />
                     </div>
                     <div className="flex-1">
