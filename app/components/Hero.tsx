@@ -56,7 +56,7 @@ const Hero = () => {
             </h1>
             <p className="text-lg lg:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               NoghteVoroord (meaning "Entry Point") is where deep conversations begin — about technology, society, creativity, and the future. 
-              We explore how ideas shape our world, how technology impacts human experience, and how curiosity connects everything in between.
+              A <span className="text-[#00704A] font-semibold">Farsi-speaking podcast</span> exploring how ideas shape our world, how technology impacts human experience, and how curiosity connects everything in between.
             </p>
             <p className="text-base lg:text-lg text-[#00704A] font-medium mt-4 max-w-2xl mx-auto lg:mx-0">
               🎧 Tune in for meaningful stories, new perspectives, and a fresh point of entry into the world of ideas.

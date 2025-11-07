@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: 'export',
   images: {
+    unoptimized: true, // Required for static export
     remotePatterns: [
       {
         protocol: 'https',
@@ -25,6 +27,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Uncomment and update if deploying to username.github.io/repo-name
+  // basePath: '/repo-name',
+  // assetPrefix: '/repo-name',
 };
 
 export default nextConfig;

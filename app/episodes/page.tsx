@@ -22,7 +22,7 @@ interface Episode {
 
 export const metadata = {
   title: 'All Episodes | Noghte Vorood Podcast',
-  description: 'Browse all episodes of the Noghte Vorood Podcast. Discussions about technology, startups, programming, and career development.',
+  description: 'Browse all episodes of the Noghte Vorood Podcast. Farsi-speaking discussions about technology, startups, programming, and career development.',
 };
 
 export default function EpisodesPage() {

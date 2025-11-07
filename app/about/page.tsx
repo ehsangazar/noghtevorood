@@ -6,7 +6,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'About - Noghte Vorood Podcast',
-  description: 'Learn more about Noghte Vorood, where deep conversations begin — about technology, society, creativity, and the future.',
+  description: 'Learn more about Noghte Vorood, a Farsi-speaking podcast where deep conversations begin — about technology, society, creativity, and the future.',
 };
 
 const AboutPage = () => {
@@ -32,15 +32,16 @@ const AboutPage = () => {
             <div className="bg-white/5 rounded-2xl p-8 lg:p-12 mb-12">
               <div className="prose prose-invert prose-lg max-w-none">
                 <p className="text-white/90 leading-relaxed mb-6">
-                  <strong className="text-[#00704A]">NoghteVoroord</strong> (meaning "Entry Point") is where deep conversations begin — about technology, society, creativity, and the future.
+                  <strong className="text-[#00704A]">NoghteVoroord</strong> (meaning "Entry Point") is where deep conversations begin — about technology, society, creativity, and the future. 
+                  A <strong className="text-[#00704A]">Farsi-speaking podcast</strong> bringing together curious minds from around the globe.
                 </p>
                 
                 <p className="text-white/90 leading-relaxed mb-6">
-                  Each episode features honest, thought-provoking discussions with guests from fields like startups, AI, design, marketing, and culture.
+                  Each episode features honest, thought-provoking discussions in Farsi with guests from fields like startups, AI, design, marketing, and culture — connecting Persian-speaking professionals worldwide.
                 </p>
                 
                 <p className="text-white/90 leading-relaxed mb-6">
-                  We explore how ideas shape our world, how technology impacts human experience, and how curiosity connects everything in between.
+                  We explore how ideas shape our world, how technology impacts human experience, and how curiosity connects everything in between — all in our native language.
                 </p>
                 
                 <div className="bg-[#00704A]/20 border-l-4 border-[#00704A] p-6 my-8 rounded">
