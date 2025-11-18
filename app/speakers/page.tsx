@@ -79,6 +79,13 @@ const speakers = [
     linkedin: 'https://www.linkedin.com/in/ebzgr/',
     image: '/guests/ebrahim_barzegary.jpg',
   },
+  {
+    name: 'Niloufar Mokhzani',
+    episode: 18,
+    title: 'Software Engineer | Living and Working in Australia vs Netherlands',
+    linkedin: '',
+    image: '/guests/niloufar.webp',
+  },
 ];
 
 const SpeakersPage = () => {
@@ -102,63 +109,64 @@ const SpeakersPage = () => {
           </div>
 
           {/* Speakers Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
             {sortedSpeakers.map((speaker) => {
               const episodeSlug = (episodesData as any[]).find((e) => e.id === speaker.episode)?.slug ?? String(speaker.episode);
               return (
                 <div
                   key={speaker.episode}
-                  className="group flex flex-col rounded-xl bg-white/5 ring-1 ring-white/10 transition-all duration-300 hover:bg-white/10 hover:ring-[#00704A]"
+                  className="group flex flex-col rounded-2xl bg-white/5 ring-1 ring-white/10 transition-all duration-300 hover:bg-white/10 hover:ring-[#00704A] hover:shadow-lg hover:shadow-[#00704A]/20 overflow-hidden"
                 >
                   <Link
                     href={`/episodes/${episodeSlug}`}
-                    className="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A] rounded-t-xl"
+                    className="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A] rounded-t-2xl"
                   >
-                    <div className="relative h-64 w-full overflow-hidden rounded-t-xl">
+                    <div className="relative w-full aspect-square overflow-hidden">
                       <Image
                         src={speaker.image}
                         alt={speaker.name}
                         fill
-                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                        className="object-cover transition-transform duration-300 group-hover:scale-110"
                       />
-                      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-black/80 to-transparent" />
-                      <div className="absolute top-4 right-4 bg-[#00704A] text-white px-3 py-1 rounded-full text-sm font-semibold">
-                        Episode {speaker.episode}
+                      <div className="absolute top-3 right-3 bg-[#00704A] text-white px-2.5 py-1 rounded-full text-xs font-semibold shadow-lg">
+                        Ep. {speaker.episode}
                       </div>
                     </div>
                   </Link>
 
-                  <div className="flex flex-1 flex-col p-6">
-                    <div className="flex-1">
+                  <div className="flex flex-1 flex-col p-5">
+                    <div className="flex-1 mb-4">
                       <Link
                         href={`/episodes/${episodeSlug}`}
                         className="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A] rounded"
                       >
-                        <h3 className="text-xl font-semibold text-white group-hover:text-[#00C27A] transition-colors">
+                        <h3 className="text-lg font-semibold text-white group-hover:text-[#00C27A] transition-colors mb-1.5">
                           {speaker.name}
                         </h3>
                       </Link>
-                      <p className="mt-2 text-sm text-white/70 line-clamp-2">
+                      <p className="text-xs text-white/60 line-clamp-3 leading-relaxed">
                         {speaker.title}
                       </p>
                     </div>
 
-                    <div className="mt-4 flex items-center gap-3 pt-4 border-t border-white/10">
-                      <a
-                        href={speaker.linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white/70 transition-colors hover:bg-white/20 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A]"
-                        aria-label={`${speaker.name}'s LinkedIn`}
-                      >
-                        <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                      </a>
+                    <div className="flex items-center gap-2 pt-3 border-t border-white/10">
+                      {speaker.linkedin && (
+                        <a
+                          href={speaker.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white/70 transition-all hover:bg-white/20 hover:text-white hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A]"
+                          aria-label={`${speaker.name}'s LinkedIn`}
+                        >
+                          <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                      )}
                       {speaker.website && (
                         <a
                           href={speaker.website}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white/70 transition-colors hover:bg-white/20 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A]"
+                          className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white/70 transition-all hover:bg-white/20 hover:text-white hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A]"
                           aria-label={`${speaker.name}'s Website`}
                         >
                           <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
