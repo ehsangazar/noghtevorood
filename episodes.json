@@ -253,5 +253,20 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=G5jkWR3bap0&t=904s",
     "youtubeId": "G5jkWR3bap0",
     "publishedAt": null
+  },
+  {
+    "id": 18,
+    "slug": "episode-18-living-and-working-in-australia-vs-netherlands-career-insights-with-niloufar-mokhzani",
+    "title": {
+      "en": "Living and Working in Australia vs Netherlands: Career Insights with Niloufar Mokhzani",
+      "fa": "زندگی و کار در استرالیا در مقابل هلند: بینش‌های شغلی با نیلوفر مخزنی"
+    },
+    "description": {
+      "en": "In this episode, the host talks with Niloufar Mokhzani about the experience of living and working in Australia and comparing it with the Netherlands. Niloufar discusses cultural and social differences in the workplace, how managers interact, and the impact of these differences on job comfort and productivity, sharing real examples from her daily work life.\n\nAnother part of the conversation is dedicated to the job market, job competition, techniques for success in technical interviews, and the role of resumes and cover letters. Niloufar also talks about the importance of networking, developing soft and technical skills, and how to use AI tools in recruitment processes. This episode will be useful for developers, immigration applicants, and anyone looking for practical tips for success in technical interviews and adapting to international work culture.",
+      "fa": "در این اپیزود میزبان با نیلوفر مخزنی درباره تجربه‌ی زندگی و کار در استرالیا و مقایسه آن با هلند گفت‌وگو می‌کند. نیلوفر از تفاوت‌های فرهنگی و اجتماعی در محیط کار، نحوۀ تعامل مدیران، و تأثیر این تفاوت‌ها بر راحتی و بازدهی شغلی می‌گوید و مثال‌های واقعی از روزمرگی کاری‌اش را به اشتراک می‌گذارد.\n\nبخش دیگری از گفتگو به بازار کار، رقابت شغلی، تکنیک‌های موفقیت در مصاحبه‌های فنی و نقش رزومه و نامه پوششی اختصاص دارد. همچنین نیلوفر درباره اهمیت شبکه‌سازی، توسعه مهارت‌های نرم و فنی، و نحوه استفاده از ابزارهای هوش مصنوعی در فرآیندهای استخدام صحبت می‌کند. این اپیزود برای توسعه‌دهندگان، متقاضیان مهاجرت و هر کسی که دنبال نکات عملی برای موفقیت در مصاحبه‌های فنی و سازگاری با فرهنگ کاری بین‌المللی است، مفید خواهد بود."
+    },
+    "youtubeUrl": "https://www.youtube.com/watch?v=EuyKWrCn1hQ",
+    "youtubeId": "EuyKWrCn1hQ",
+    "publishedAt": null
   }
 ]
