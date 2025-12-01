@@ -86,6 +86,13 @@ const speakers = [
     linkedin: '',
     image: '/guests/niloufar.webp',
   },
+  {
+    name: 'Hossein Jadidi',
+    episode: 19,
+    title: 'Principal Architect | Solution Architect | AI Implementation in Large Companies',
+    linkedin: '',
+    image: '/guests/hossein_jadidi.jpg',
+  },
 ];
 
 const SpeakersPage = () => {

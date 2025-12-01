@@ -268,5 +268,20 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=EuyKWrCn1hQ",
     "youtubeId": "EuyKWrCn1hQ",
     "publishedAt": null
+  },
+  {
+    "id": 19,
+    "slug": "episode-19-ai-implementation-in-large-companies-solution-architect-hossein-jadidi-malaysia",
+    "title": {
+      "en": "AI Implementation in Large Companies: Solution Architect Insights with Hossein Jadidi from Malaysia",
+      "fa": "پیاده‌سازی هوش مصنوعی در شرکت‌های بزرگ: بینش‌های Solution Architect با حسین جدیدی از مالزی"
+    },
+    "description": {
+      "en": "In this episode, we sit down with Hossein Jadidi from Malaysia to discuss practical experiences of implementing AI projects in large companies. Hossein shares his career path from Business Intelligence and full-stack development to his role as Solution Architect at Petronas and currently as Principal Architect at a SaaS company (immigrated to Malaysia in 2012 and entered the job market in 2015). His experiences include fraud detection projects, image processing, synthetic data generation, and designing LLM-based solutions.\n\nThe main discussion revolves around technical and organizational challenges: from problems integrating LLMs into sensitive systems like billing (serialization issues and errors) to testing challenges, controlling hallucinations, and managing stakeholders and resources. Hossein explains tools and platforms like Outsystems, Power Apps, Azure Foundry, OpenRouter, and new concepts like agentic AI and agent orchestration, reviewing real examples from projects like fraud detection in healthcare.\n\nIf you want to know how a Solution Architect operates in large organizations, how they manage MVP and budget, and what risks exist in launching AI, this episode is for you. Have questions? Write in the comments or send us a message through podcast channels—Hossein and we would be happy to answer and plan future episodes with topics you want.",
+      "fa": "در این اپیزود با حسین جدیدی از مالزی می‌نشینیم و درباره تجربه عملی پیاده‌سازی پروژه‌های هوش مصنوعی در شرکت‌های بزرگ صحبت می‌کنیم. حسین از مسیر حرفه‌ای‌اش از حوزه Business Intelligence و توسعه فول‌استک تا نقش Solution Architect در Petronas و اکنون Principal Architect در یک شرکت SaaS می‌گوید (مهاجرت به مالزی از سال ۲۰۱۲ و ورود به بازار کار از سال ۲۰۱۵). مرور تجربه‌های او شامل پروژه‌های تشخیص تقلب، پردازش تصویر، تولید داده‌های سنتتیک و طراحی راهکارهای مبتنی بر LLM است.\n\nبحث اصلی اپیزود حول چالش‌های فنی و سازمانی است: از مشکلات ادغام LLM در سیستم‌های حساس مثل بیلینگ (مسئله serialization و خطاها) تا چالش‌های تست، کنترل هالوسینیشن و مدیریت استیک‌هولدرها و منابع. حسین درباره ابزارها و پلتفرم‌هایی مثل Outsystems، Power Apps، Azure Foundry، OpenRouter و مفاهیم جدیدی چون agentic AI و ارکستراسیون ایجنت‌ها توضیح می‌دهد و نمونه‌های واقعی از پروژه‌ها مثل فوروُد دتکشن در حوزه سلامت را مرور می‌کند.\n\nاگر دوست دارید بدانید چطور یک سلوشن آرتیکت در سازمان‌های بزرگ عمل می‌کند، چطور MVP و بودجه را مدیریت می‌کند و چه ریسک‌هایی در راه‌اندازی ای‌آی وجود دارد، این اپیزود مناسب شماست. سوال دارید؟ در کامنت‌ها بنویسید یا از طریق کانال‌های پادکست برای ما پیام بفرستید — حسین و ما خوشحال می‌شویم پاسخ دهیم و اپیزودهای بعدی را با موضوعاتی که شما می‌خواهید برنامه‌ریزی کنیم."
+    },
+    "youtubeUrl": "https://www.youtube.com/watch?v=es-gGapT6kU",
+    "youtubeId": "es-gGapT6kU",
+    "publishedAt": null
   }
 ]
