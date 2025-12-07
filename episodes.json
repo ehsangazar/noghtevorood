@@ -283,5 +283,20 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=es-gGapT6kU",
     "youtubeId": "es-gGapT6kU",
     "publishedAt": null
+  },
+  {
+    "id": 20,
+    "slug": "episode-20-conversation-with-ehsan-abbasi-slack-ai-and-programming-path",
+    "title": {
+      "en": "Conversation with Ehsan Abbasi: Working at Slack, AI's Role, and the Programming Path",
+      "fa": "گفت‌وگو با احسان عباسی: تجربه کار در Slack، نقش AI و مسیر برنامه‌نویسی"
+    },
+    "description": {
+      "en": "In this episode, we talk with Ehsan Abbasi, Senior Software Engineer at Slack and a successful YouTuber. Ehsan shares his journey of immigrating to Melbourne, experiences working at large tech companies, and his content creation background.\n\n💡 Key topics in this conversation:\n\nChanges in Slack's culture after being acquired by Salesforce and how it's used daily\n\nReal impact of Artificial Intelligence (AI) on the programming job market and the importance of foundational knowledge\n\nImportance and place of Soft Skills that AI cannot replace\n\nHow AI tools (like Claude, Cursor, Gemini) are used in large companies and the shift from Engineer to Solution Architect\n\nChallenges of working at global companies: managing sensitive data (PII, GDPR) and security processes\n\n5 years of YouTube experience and the secret to success (Infotainment)\n\nDifferences and challenges of Persian and English YouTube\n\nFinal recommendations for new programmers and content creators",
+      "fa": "در این اپیزود با احسان عباسی، مهندس نرم‌افزار ارشد در Slack و یک یوتیوبر موفق گفتگو می‌کنیم. احسان از مسیر مهاجرت به ملبورن، تجربیات کار در شرکت‌های بزرگ فناوری و سابقه تولید محتوای خود می‌گوید.\n\n💡 مباحث کلیدی این گفتگو:\n\nتغییر فرهنگ Slack پس از خرید توسط Salesforce و نحوه استفاده روزمره از آن\n\nتأثیر واقعی هوش مصنوعی (AI) بر بازار کار برنامه‌نویسان و اهمیت دانش پایه\n\nاهمیت و جایگاه مهارت‌های نرم (Soft Skills) که هوش مصنوعی نمی‌تواند جایگزین کند\n\nنحوه استفاده از ابزارهای AI (مثل Claude، Cursor، Gemini) در شرکت‌های بزرگ و تغییر نقش مهندس به Solution Architect\n\nچالش‌های کار در شرکت‌های جهانی: مدیریت داده‌های حساس (PII, GDPR) و فرآیندهای امنیتی\n\nتجربه ۵ ساله یوتیوب و راز موفقیت آن (Infotainment)\n\nتفاوت‌ها و چالش‌های یوتیوب فارسی و انگلیسی\n\nتوصیه‌های نهایی برای برنامه‌نویسان تازه‌کار و تولیدکنندگان محتوا"
+    },
+    "youtubeUrl": "https://www.youtube.com/watch?v=kdF2xYpR9UU&t=3004s",
+    "youtubeId": "kdF2xYpR9UU",
+    "publishedAt": null
   }
 ]

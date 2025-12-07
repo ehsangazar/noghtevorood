@@ -110,13 +110,13 @@ const Hero = () => {
                 {/* Ehsan Gazar */}
                 <div className="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-all group">
                   <div className="flex items-center gap-4">
-                    <div className="relative w-20 h-20 flex-shrink-0">
+                    <div className="relative w-28 h-28 flex-shrink-0">
                       <Image
                         src="/ehsan_gazar.png"
                         alt="Ehsan Gazar"
-                        width={80}
-                        height={80}
-                        className="rounded-full object-cover ring-2 ring-[#00704A]/50 group-hover:ring-[#00704A] transition-all grayscale"
+                        width={112}
+                        height={112}
+                        className="rounded-full object-cover ring-2 ring-[#00704A]/50 group-hover:ring-[#00704A] transition-all"
                       />
                     </div>
                     <div className="flex-1">
@@ -153,13 +153,13 @@ const Hero = () => {
                 {/* Ali Parvizi */}
                 <div className="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-all group">
                   <div className="flex items-center gap-4">
-                    <div className="relative w-20 h-20 flex-shrink-0">
+                    <div className="relative w-28 h-28 flex-shrink-0">
                       <Image
                         src="/ali_parvizi.png"
                         alt="Ali Parvizi"
-                        width={80}
-                        height={80}
-                        className="rounded-full object-cover ring-2 ring-[#00704A]/50 group-hover:ring-[#00704A] transition-all grayscale"
+                        width={112}
+                        height={112}
+                        className="rounded-full object-cover ring-2 ring-[#00704A]/50 group-hover:ring-[#00704A] transition-all"
                       />
                     </div>
                     <div className="flex-1">

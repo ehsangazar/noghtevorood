@@ -93,6 +93,13 @@ const speakers = [
     linkedin: '',
     image: '/guests/hossein_jadidi.jpg',
   },
+  {
+    name: 'Ehsan Abbasi',
+    episode: 20,
+    title: 'Senior Software Engineer at Slack / YouTuber',
+    linkedin: 'https://www.linkedin.com/in/eabbasi/',
+    image: '/guests/ehsan-abbasi.jpeg',
+  },
 ];
 
 const SpeakersPage = () => {
