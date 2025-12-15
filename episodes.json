@@ -298,5 +298,20 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=kdF2xYpR9UU&t=3004s",
     "youtubeId": "kdF2xYpR9UU",
     "publishedAt": null
+  },
+  {
+    "id": 21,
+    "slug": "episode-21-interview-with-mahdieh-amiri-blockchain-developer-web3",
+    "title": {
+      "en": "Interview with Mahdieh Amiri: Blockchain Developer and Web3 Community Builder",
+      "fa": "مصاحبه با مهدیه امیری: برنامه‌نویس بلاکچین و سازنده کامیونیتی Web3"
+    },
+    "description": {
+      "en": "In this episode, we talk with Mahdieh, a blockchain developer and one of the most active Persian-speaking individuals in the Web3 space. Over the past 5-6 years, she has been active in smart contract development, attending major Ethereum events, and building the Iranian blockchain community.\n\nShe shares her journey:\n\nFrom her initial introduction to blockchain in Iran, to attending global events like DevConnect, DevCon, and other major events—and how Web3 can create global, remote, and borderless job opportunities for Iranian youth.\n\nIn this conversation, we discuss:\n\nStarting the Solidity programming path\nEthereum community culture and the importance of networking\nHow Web3 eliminates geographical limitations\nBuilding community in Iran and the DConf group experience\nJob opportunities in blockchain, DeFi, GameFi, and RWA\nRapid technology growth and learning challenges\nThe role of global events in showcasing Iranian developers\n\nIf you're looking to learn about Web3 career paths, blockchain, or hear real experiences from Iranian developers in the global space, this episode is for you.",
+      "fa": "در این قسمت با مهدیه صحبت می‌کنیم؛ برنامه‌نویس بلاکچین و از فعال‌ترین افراد فارسی‌زبان در حوزه Web3 که طی ۵–۶ سال گذشته در مسیر توسعه قراردادهای هوشمند، حضور در رویدادهای بزرگ اتریوم و ساخت کامیونیتی ایرانی بلاکچین فعالیت کرده است.\n\nاو از مسیرش می‌گوید:\n\nاز شروع آشنایی با بلاکچین در ایران، تا حضور در رویدادهای جهانی مثل DevConnect، DevCon و ایونت‌های بزرگ دیگر—و این‌که چطور Web3 می‌تواند برای بچه‌های ایران فرصت‌های شغلی جهانی، ریموت و بدون مرز ایجاد کند.\n\nدر این گفتگو درباره‌ی موضوعات زیر صحبت می‌کنیم:\n\nشروع مسیر برنامه‌نویسی سالیدیتی\nفرهنگ جامعه اتریوم و اهمیت شبکه‌سازی\nچطور Web3 محدودیت‌های جغرافیایی را از بین می‌برد\nساخت کامیونیتی در ایران و تجربه گروه DConf\nفرصت‌های شغلی در حوزه بلاکچین، دیفای، GameFi و RWA\nرشد سریع تکنولوژی و چالش‌های یادگیری\nنقش رویدادهای جهانی در دیده شدن توسعه‌دهندگان ایرانی\n\nاگر دنبال شناختن مسیرهای شغلی Web3، بلاکچین، یا شنیدن تجربه واقعی توسعه‌دهندگان ایرانی در فضای جهانی هستید، این قسمت برای شماست."
+    },
+    "youtubeUrl": "https://www.youtube.com/watch?v=Olv7NJScwfE&t=1200s",
+    "youtubeId": "Olv7NJScwfE",
+    "publishedAt": null
   }
 ]

@@ -42,7 +42,7 @@ const RecentEpisodes = () => {
             >
               <div className="mb-4">
                 {episode.youtubeId ? (
-                  <div className="relative w-full h-48 bg-white/10">
+                  <div className="relative w-full aspect-video bg-white/10">
                     <Image
                       src={`https://img.youtube.com/vi/${episode.youtubeId}/maxresdefault.jpg`}
                       alt={episode.title.en}
@@ -63,7 +63,7 @@ const RecentEpisodes = () => {
                     </div>
                   </div>
                 ) : (
-                  <div className="w-full h-48 bg-white/10 flex items-center justify-center">
+                  <div className="w-full aspect-video bg-white/10 flex items-center justify-center">
                     <div className="text-white/30 text-sm">Episode Image</div>
                   </div>
                 )}

@@ -100,6 +100,13 @@ const speakers = [
     linkedin: 'https://www.linkedin.com/in/eabbasi/',
     image: '/guests/ehsan-abbasi.jpeg',
   },
+  {
+    name: 'Mahdieh Amiri',
+    episode: 21,
+    title: 'Blockchain Developer | Web3 Community Builder | Solidity | Smart Contracts',
+    linkedin: 'https://www.linkedin.com/in/mahdieh-amiri-blockchain/',
+    image: '/mahdieh-amiri.jpeg',
+  },
 ];
 
 const SpeakersPage = () => {

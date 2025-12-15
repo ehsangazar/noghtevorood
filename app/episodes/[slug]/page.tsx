@@ -101,7 +101,7 @@ export default async function EpisodePage({ params }: PageProps) {
             {/* YouTube Video Embed */}
             {episode.youtubeId && (
               <div className="mb-12">
-                <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
+                <div className="relative w-full aspect-video rounded-xl overflow-hidden">
                   <iframe
                     className="absolute top-0 left-0 w-full h-full"
                     src={`https://www.youtube.com/embed/${episode.youtubeId}`}

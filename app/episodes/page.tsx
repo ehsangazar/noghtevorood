@@ -55,7 +55,7 @@ export default function EpisodesPage() {
               >
                 {/* Thumbnail */}
                 {episode.youtubeId ? (
-                  <div className="relative w-full h-48 bg-white/10 overflow-hidden">
+                  <div className="relative w-full aspect-video bg-white/10 overflow-hidden">
                     <Image
                       src={`https://img.youtube.com/vi/${episode.youtubeId}/maxresdefault.jpg`}
                       alt={episode.title.en}
@@ -72,7 +72,7 @@ export default function EpisodesPage() {
                     </div>
                   </div>
                 ) : (
-                  <div className="w-full h-48 bg-white/10 flex items-center justify-center">
+                  <div className="w-full aspect-video bg-white/10 flex items-center justify-center">
                     <div className="text-white/30 text-sm">Episode Image</div>
                   </div>
                 )}
