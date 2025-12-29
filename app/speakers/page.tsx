@@ -107,6 +107,20 @@ const speakers = [
     linkedin: 'https://www.linkedin.com/in/mahdieh-amiri-blockchain/',
     image: '/mahdieh-amiri.jpeg',
   },
+  {
+    name: 'Amir Chavoshi',
+    episode: 22,
+    title: 'Education Expert | Online Learning | Maktabkhooneh',
+    linkedin: '',
+    image: '/amir-chavoshi.jpeg',
+  },
+  {
+    name: 'Ghazaleh Masoodi',
+    episode: 23,
+    title: 'Social Worker | Life Skills & Sexual Health Educator',
+    linkedin: '',
+    image: '/ghazaleh_masoodi.jpg',
+  },
 ];
 
 const SpeakersPage = () => {

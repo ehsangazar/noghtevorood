@@ -104,24 +104,24 @@ const Hero = () => {
 
         {/* Right Side - Co-Podcasters */}
           <div className="flex-1 flex justify-center lg:justify-end">
-            <div className="w-full max-w-md lg:max-w-lg">
+            <div className="w-full max-w-lg lg:max-w-xl">
               {/* Co-Podcasters Grid */}
               <div className="space-y-6">
                 {/* Ehsan Gazar */}
-                <div className="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-all group">
-                  <div className="flex items-center gap-4">
-                    <div className="relative w-28 h-28 flex-shrink-0">
+                <div className="bg-white/5 rounded-xl p-8 hover:bg-white/10 transition-all group">
+                  <div className="flex items-center gap-6">
+                    <div className="relative w-40 h-40 flex-shrink-0">
                       <Image
                         src="/ehsan_gazar.png"
                         alt="Ehsan Gazar"
-                        width={112}
-                        height={112}
+                        width={160}
+                        height={160}
                         className="rounded-full object-cover ring-2 ring-[#00704A]/50 group-hover:ring-[#00704A] transition-all"
                       />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-white mb-1">Ehsan Gazar</h3>
-                      <p className="text-sm text-white/70 mb-2">Principal Engineer | Technical Lead</p>
+                      <h3 className="text-2xl font-bold text-white mb-2">Ehsan Gazar</h3>
+                      <p className="text-base text-white/70 mb-3">Principal Engineer | Technical Lead</p>
                       <div className="flex gap-2">
                         <a
                           href="https://www.linkedin.com/in/gazar/"
@@ -151,20 +151,20 @@ const Hero = () => {
                 </div>
 
                 {/* Ali Parvizi */}
-                <div className="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-all group">
-                  <div className="flex items-center gap-4">
-                    <div className="relative w-28 h-28 flex-shrink-0">
+                <div className="bg-white/5 rounded-xl p-8 hover:bg-white/10 transition-all group">
+                  <div className="flex items-center gap-6">
+                    <div className="relative w-40 h-40 flex-shrink-0">
                       <Image
                         src="/ali_parvizi.png"
                         alt="Ali Parvizi"
-                        width={112}
-                        height={112}
+                        width={160}
+                        height={160}
                         className="rounded-full object-cover ring-2 ring-[#00704A]/50 group-hover:ring-[#00704A] transition-all"
                       />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-white mb-1">Ali Parvizi</h3>
-                      <p className="text-sm text-white/70 mb-2">Front-end Software Engineer</p>
+                      <h3 className="text-2xl font-bold text-white mb-2">Ali Parvizi</h3>
+                      <p className="text-base text-white/70 mb-3">Front-end Software Engineer</p>
                       <div className="flex gap-2">
                         <a
                           href="https://www.linkedin.com/in/ali-parvizi/"
