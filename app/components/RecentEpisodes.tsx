@@ -26,11 +26,14 @@ const RecentEpisodes = () => {
     .slice(0, 6);
 
   return (
-    <section className="bg-black py-16">
+    <section className="py-16">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl lg:text-4xl font-bold text-white mb-12 text-center lg:text-left">
-          Recent episodes
-        </h2>
+        <div className="mb-12 text-center lg:text-left">
+          <p className="eyebrow mb-3 justify-center lg:justify-start">Latest drops</p>
+          <h2 className="text-3xl lg:text-4xl font-bold text-white">
+            Recent episodes
+          </h2>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {episodes.map((episode) => (
@@ -38,7 +41,7 @@ const RecentEpisodes = () => {
               key={episode.id}
               href={`/episodes/${episode.slug}`}
               aria-label={`Open episode ${episode.id}: ${episode.title.en}`}
-              className="group bg-white/5 rounded-lg overflow-hidden hover:bg-white/10 transition-all hover:scale-105 cursor-pointer flex flex-col focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A]"
+              className="surface-card group overflow-hidden cursor-pointer flex flex-col focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A]"
             >
               <div className="mb-4">
                 {episode.youtubeId ? (
@@ -69,7 +72,7 @@ const RecentEpisodes = () => {
                 )}
                 <div className="p-6">
                   <div className="mb-2">
-                    <span className="bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded">
+                    <span className="inline-block bg-[#00704A]/15 text-[#00C27A] ring-1 ring-[#00704A]/30 text-xs font-semibold px-2.5 py-1 rounded-full">
                       Episode {episode.id}
                     </span>
                   </div>

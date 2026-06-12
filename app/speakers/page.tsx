@@ -127,7 +127,7 @@ const SpeakersPage = () => {
   const sortedSpeakers = speakers.sort((a, b) => b.episode - a.episode);
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen">
       <Header />
       
       <main id="main-content" className="py-20">
@@ -135,9 +135,9 @@ const SpeakersPage = () => {
           {/* Hero Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
-              Our Speakers
+              Our <span className="text-gradient-brand">Speakers</span>
             </h1>
-            <div className="w-24 h-1 bg-[#00704A] mx-auto mb-8"></div>
+            <div className="w-24 h-1 rounded-full bg-gradient-to-r from-[#00704A] to-[#00C27A] mx-auto mb-8"></div>
             <p className="text-xl text-white/80 leading-relaxed max-w-3xl mx-auto">
               Meet the incredible guests who have shared their insights, experiences, and stories on Noghte Vorood.
             </p>

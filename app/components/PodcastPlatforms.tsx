@@ -30,9 +30,9 @@ const PodcastPlatforms = () => {
   ];
 
   return (
-    <section className="bg-black py-16">
+    <section className="py-8">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+        <div className="surface-card flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 p-8 lg:p-10 hover:translate-y-0">
           {/* Left Side - Text */}
           <div className="text-center lg:text-left max-w-xl">
             <p className="text-[#00704A] text-xs uppercase tracking-widest mb-2">Listen anywhere</p>

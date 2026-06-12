@@ -22,12 +22,24 @@ const Hero = () => {
   };
 
   return (
-    <section className="bg-black py-20 lg:py-32">
-      <div className="container mx-auto px-6">
+    <section className="relative overflow-hidden py-20 lg:py-32">
+      {/* Ambient brand glow */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -top-24 right-0 h-[480px] w-[480px] rounded-full bg-[#00704A]/20 blur-[120px]"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute bottom-0 left-1/4 h-[360px] w-[360px] rounded-full bg-[#009962]/10 blur-[120px]"
+      />
+      <div className="container relative mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Left Side - Text Content */}
           <div className="flex-1 text-center lg:text-left">
-            <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6">
+            <p className="eyebrow mb-5 justify-center lg:justify-start">
+              Farsi Podcast · پادکست
+            </p>
+            <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 tracking-tight">
               {splitText(title)}
               <span className="title-underline">
                 <svg viewBox="0 0 500 15" preserveAspectRatio="none">
@@ -68,7 +80,7 @@ const Hero = () => {
               href="https://www.youtube.com/@noghte_vorood"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#00704A] hover:bg-[#009962] text-white px-6 py-3 rounded-lg font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A]"
+              className="btn-glow inline-flex items-center gap-2 bg-[#00704A] hover:bg-[#009962] text-white px-6 py-3 rounded-lg font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A]"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
@@ -77,7 +89,7 @@ const Hero = () => {
             </a>
             <a
               href="/episodes"
-              className="inline-flex items-center gap-2 bg-white text-black hover:bg-gray-200 px-6 py-3 rounded-lg font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A]"
+              className="inline-flex items-center gap-2 bg-white/5 text-white ring-1 ring-white/15 hover:bg-white/10 hover:ring-white/25 px-6 py-3 rounded-lg font-semibold transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A]"
             >
               Browse Episodes
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -108,7 +120,7 @@ const Hero = () => {
               {/* Co-Podcasters Grid */}
               <div className="space-y-6">
                 {/* Ehsan Gazar */}
-                <div className="bg-white/5 rounded-xl p-8 hover:bg-white/10 transition-all group">
+                <div className="surface-card p-8 group">
                   <div className="flex items-center gap-6">
                     <div className="relative w-40 h-40 flex-shrink-0">
                       <Image
@@ -151,7 +163,7 @@ const Hero = () => {
                 </div>
 
                 {/* Ali Parvizi */}
-                <div className="bg-white/5 rounded-xl p-8 hover:bg-white/10 transition-all group">
+                <div className="surface-card p-8 group">
                   <div className="flex items-center gap-6">
                     <div className="relative w-40 h-40 flex-shrink-0">
                       <Image

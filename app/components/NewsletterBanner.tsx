@@ -49,9 +49,11 @@ const NewsletterBanner = () => {
   };
 
   return (
-    <section className="bg-black py-16 border-t border-white/10">
+    <section className="py-20">
       <div className="container mx-auto px-6">
+        <hr className="section-divider mb-16" />
         <div className="max-w-3xl mx-auto text-center">
+          <p className="eyebrow mb-4 justify-center">Newsletter</p>
           <h2 className="text-2xl lg:text-3xl font-bold text-white mb-4">
             Receive new episodes in your inbox.
           </h2>
@@ -77,7 +79,7 @@ const NewsletterBanner = () => {
               <button
                 type="submit"
                 disabled={status === 'loading' || status === 'success'}
-                className="w-full bg-[#00704A] hover:bg-[#009962] disabled:bg-[#00704A]/50 disabled:cursor-not-allowed text-white px-8 py-4 rounded-lg font-semibold transition-all flex items-center justify-center gap-2"
+                className="btn-glow w-full bg-[#00704A] hover:bg-[#009962] disabled:bg-[#00704A]/50 disabled:cursor-not-allowed text-white px-8 py-4 rounded-lg font-semibold transition-all flex items-center justify-center gap-2"
               >
                 {status === 'loading' && (
                   <svg className="animate-spin h-5 w-5" fill="none" viewBox="0 0 24 24">

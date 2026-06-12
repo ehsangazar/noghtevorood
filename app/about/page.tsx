@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const AboutPage = () => {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen">
       <Header />
       
       <main id="main-content" className="py-20">
@@ -20,16 +20,16 @@ const AboutPage = () => {
             {/* Hero Section */}
             <div className="text-center mb-16">
               <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
-                About Noghte Vorood
+                About <span className="text-gradient-brand">Noghte Vorood</span>
               </h1>
-              <div className="w-24 h-1 bg-[#00704A] mx-auto mb-8"></div>
+              <div className="w-24 h-1 rounded-full bg-gradient-to-r from-[#00704A] to-[#00C27A] mx-auto mb-8"></div>
               <p className="text-xl text-white/80 leading-relaxed">
                 پادکست نقطه‌ورود | Where Deep Conversations Begin
               </p>
             </div>
 
             {/* Main Content */}
-            <div className="bg-white/5 rounded-2xl p-8 lg:p-12 mb-12">
+            <div className="surface-card hover:translate-y-0 p-8 lg:p-12 mb-12">
               <div className="prose prose-invert prose-lg max-w-none">
                 <p className="text-white/90 leading-relaxed mb-6">
                   <strong className="text-[#00704A]">NoghteVoroord</strong> (meaning "Entry Point") is where deep conversations begin — about technology, society, creativity, and the future. 
@@ -59,7 +59,7 @@ const AboutPage = () => {
               </h2>
               <div className="space-y-8">
                 {/* Ehsan Gazar */}
-                <div className="bg-white/5 rounded-xl p-8 hover:bg-white/10 transition-all">
+                <div className="surface-card p-8">
                   <div className="flex flex-col md:flex-row gap-6">
                     <div className="flex-shrink-0">
                       <Image
@@ -108,7 +108,7 @@ const AboutPage = () => {
                 </div>
 
                 {/* Ali Parvizi */}
-                <div className="bg-white/5 rounded-xl p-8 hover:bg-white/10 transition-all">
+                <div className="surface-card p-8">
                   <div className="flex flex-col md:flex-row gap-6">
                     <div className="flex-shrink-0">
                       <Image
