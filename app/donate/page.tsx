@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const DonatePage = () => {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen">
       <Header />
       
       <main id="main-content" className="py-20">
@@ -19,16 +19,16 @@ const DonatePage = () => {
             {/* Hero Section */}
             <div className="text-center mb-16">
               <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
-                Support Our Podcast
+                Support Our <span className="text-gradient-brand">Podcast</span>
               </h1>
-              <div className="w-24 h-1 bg-[#00704A] mx-auto mb-8"></div>
+              <div className="w-24 h-1 rounded-full bg-gradient-to-r from-[#00704A] to-[#00C27A] mx-auto mb-8"></div>
               <p className="text-xl text-white/80 leading-relaxed">
                 Help us continue creating meaningful conversations
               </p>
             </div>
 
             {/* Main Content */}
-            <div className="bg-white/5 rounded-2xl p-8 lg:p-12 mb-12">
+            <div className="surface-card hover:translate-y-0 p-8 lg:p-12 mb-12">
               <div className="prose prose-invert prose-lg max-w-none">
                 <p className="text-white/90 leading-relaxed mb-6 text-center">
                   Noghte Vorood is an independent podcast created with passion and dedication. 
@@ -71,7 +71,7 @@ const DonatePage = () => {
                 href="https://github.com/sponsors/ehsangazar"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-[#00704A] hover:bg-[#009962] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:scale-105"
+                className="btn-glow inline-flex items-center gap-3 bg-[#00704A] hover:bg-[#009962] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -85,7 +85,7 @@ const DonatePage = () => {
             </div>
 
             {/* Alternative Support */}
-            <div className="mt-12 bg-white/5 rounded-xl p-8 text-center">
+            <div className="mt-12 surface-card hover:translate-y-0 p-8 text-center">
               <h4 className="text-xl font-semibold text-white mb-4">
                 Other Ways to Support
               </h4>

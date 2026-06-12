@@ -65,7 +65,7 @@ export default async function EpisodePage({ params }: PageProps) {
   }
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen">
       <Header />
       
       <main id="main-content" className="py-20">
@@ -87,7 +87,7 @@ export default async function EpisodePage({ params }: PageProps) {
 
             {/* Episode Header */}
             <div className="mb-8">
-              <div className="inline-block bg-[#00704A] text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">
+              <div className="inline-block bg-[#00704A]/15 text-[#00C27A] ring-1 ring-[#00704A]/30 text-xs font-semibold px-3 py-1 rounded-full mb-4">
                 Episode {episode.id}
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
@@ -101,7 +101,7 @@ export default async function EpisodePage({ params }: PageProps) {
             {/* YouTube Video Embed */}
             {episode.youtubeId && (
               <div className="mb-12">
-                <div className="relative w-full aspect-video rounded-xl overflow-hidden">
+                <div className="relative w-full aspect-video rounded-xl overflow-hidden ring-1 ring-white/10 shadow-2xl shadow-[#00704A]/20">
                   <iframe
                     className="absolute top-0 left-0 w-full h-full"
                     src={`https://www.youtube.com/embed/${episode.youtubeId}`}
@@ -114,7 +114,7 @@ export default async function EpisodePage({ params }: PageProps) {
             )}
 
             {/* Episode Description */}
-            <div className="bg-white/5 rounded-xl p-8 mb-8">
+            <div className="surface-card hover:translate-y-0 p-8 mb-8">
               <h3 className="text-2xl font-bold text-white mb-4">About This Episode</h3>
               <div className="prose prose-lg max-w-none">
                 <p className="text-white/80 whitespace-pre-wrap leading-relaxed">
@@ -124,7 +124,7 @@ export default async function EpisodePage({ params }: PageProps) {
             </div>
 
             {/* Persian Description */}
-            <div className="bg-white/5 rounded-xl p-8 mb-8" dir="rtl">
+            <div className="surface-card hover:translate-y-0 p-8 mb-8" dir="rtl">
               <h3 className="text-2xl font-bold text-white mb-4">درباره این اپیزود</h3>
               <div className="prose prose-lg max-w-none">
                 <p className="text-white/80 whitespace-pre-wrap leading-relaxed">

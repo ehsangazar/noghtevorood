@@ -18,18 +18,22 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-black/80 backdrop-blur supports-[backdrop-filter]:bg-black/60 py-3">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur supports-[backdrop-filter]:bg-black/50 py-3">
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo Section */}
-        <Link href="/" className="flex items-center hover:opacity-80 transition-opacity focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A] rounded">
+        <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A] rounded">
           <Image
             src="/channels4_profile.jpg"
             alt="Noghte Vorood Logo"
-            width={80}
-            height={80}
-            className="object-contain"
+            width={48}
+            height={48}
+            className="rounded-full object-contain ring-1 ring-white/15"
             priority
           />
+          <span className="hidden sm:flex flex-col leading-none">
+            <span className="text-white font-bold tracking-tight">Noghte Vorood</span>
+            <span className="text-[#00C27A] text-[0.7rem] tracking-wide" dir="rtl">نقطه‌ورود</span>
+          </span>
         </Link>
 
         {/* Navigation and Mobile Menu */}

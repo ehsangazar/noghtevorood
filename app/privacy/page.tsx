@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const PrivacyPage = () => {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen">
       <Header />
       
       <main id="main-content" className="py-20">
@@ -19,16 +19,16 @@ const PrivacyPage = () => {
             {/* Hero Section */}
             <div className="text-center mb-16">
               <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
-                Privacy Policy
+                Privacy <span className="text-gradient-brand">Policy</span>
               </h1>
-              <div className="w-24 h-1 bg-[#00704A] mx-auto mb-8"></div>
+              <div className="w-24 h-1 rounded-full bg-gradient-to-r from-[#00704A] to-[#00C27A] mx-auto mb-8"></div>
               <p className="text-xl text-white/80 leading-relaxed">
                 Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
               </p>
             </div>
 
             {/* Main Content */}
-            <div className="bg-white/5 rounded-2xl p-8 lg:p-12">
+            <div className="surface-card hover:translate-y-0 p-8 lg:p-12">
               <div className="prose prose-invert prose-lg max-w-none space-y-8">
                 <section>
                   <h2 className="text-2xl font-bold text-white mb-4">Introduction</h2>

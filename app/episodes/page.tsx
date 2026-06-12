@@ -29,7 +29,7 @@ export default function EpisodesPage() {
   const episodes = (episodesData as Episode[]).sort((a, b) => b.id - a.id);
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen">
       <Header />
       
       <main id="main-content" className="py-20">
@@ -37,9 +37,9 @@ export default function EpisodesPage() {
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
-              All Episodes
+              All <span className="text-gradient-brand">Episodes</span>
             </h1>
-            <div className="w-24 h-1 bg-[#00704A] mx-auto mb-8"></div>
+            <div className="w-24 h-1 rounded-full bg-gradient-to-r from-[#00704A] to-[#00C27A] mx-auto mb-8"></div>
             <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
               Explore our collection of {episodes.length} episodes covering technology, society, creativity, and the future
             </p>
@@ -51,7 +51,7 @@ export default function EpisodesPage() {
               <Link
                 key={episode.id}
                 href={`/episodes/${episode.slug}`}
-                className="group bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300 overflow-hidden hover:scale-105"
+                className="surface-card group overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00704A]"
               >
                 {/* Thumbnail */}
                 {episode.youtubeId ? (
@@ -80,7 +80,7 @@ export default function EpisodesPage() {
                 {/* Content */}
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="bg-[#00704A] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                    <span className="bg-[#00704A]/15 text-[#00C27A] ring-1 ring-[#00704A]/30 text-xs font-semibold px-3 py-1 rounded-full">
                       Episode {episode.id}
                     </span>
                   </div>
